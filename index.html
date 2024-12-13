@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+  <title>Site AWS Front-end</title>
+  <!--CSS Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <!--CSs Personalizado-->
+  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+  <link rel="stylesheet" type="text/css" href="css/arquivodoido.css" />
+
+  <!--Fonte para icones- Biblioteca-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous" />
+</head>
+
+<body onload="loadCitiesAndStates()"><!--Aqui tem o onload para carregar dados da api-->
+
+  <!--Topo-->
+  <div class="container-fluid bg-topo">
+    <!--Classe bg-topo é particular e está no estilo.css-->
+    <header class="container">
+      <!--Menu de navegação-->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="index.html" class="navbar-brand" target="_blank">
+          <img src="img/logo.png" height="140" class="d-inline-block align-top" />
+        </a>
+        <!--btn para caso mobile-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" area-controls="menu"
+          aria-expanded="false" aria-label="Menu Colapso">
+          <!--Icone para Menu no caso mobile-->
+          <span class="navbar-toggler-icon text-light"></span>
+        </button>
+        <!--Área de conteúdo-->
+        <div id="menu" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto text-light">
+            <li class="nav-item">
+              <a href="#home" class="nav-link text-light font-weight-bold scroll-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#somos" class="nav-link text-light font-weight-bold scroll-page">Quem somos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#servicos" class="nav-link text-light font-weight-bold scroll-page">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a href="formulario.html" class="nav-link text-light font-weight-bold scroll-page">Currículo</a>
+            </li>
+
+          </ul>
+         
+
+
+        </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </nav>
+  </header>
+  </div>
+  <!--Fim estilização TOPO-->
+  <!--Inicio SlideShow-->
+  <div class="container-fluid my-2">
+    <div id="slideshow" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+        <li data-target="#slideshow" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#">
+            <img src="img/bannerPainelSolar.png" class="d-block w-100" alt="Foto painel Solar" />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#">
+            <img src="img/banner123.png" class="d-block w-100" alt="Foto energia eólica" />
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#">
+            <img src="img/1234Mulher.png" class="d-block w-100" alt="Foto energia eólica" />
+          </a>
+        </div>
+      </div>
+      <!--Botoes voltar/next no banner-->
+      <a href="#slideshow" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a href="#slideshow" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </div>
+
+  <!--Fim SlideShow-->
+  <!--Inicio Serviços-->
+  <div id="servicos" class="servicos-container">
+    <div class="container bg-servicos rounded shadow-lg" style="max-width: 85%; padding: 0 30px;">
+      <div class="row py-4 d-flex justify-content-center align-items-center flex-wrap">
+        <header class="col-md-12">
+          <h2 class="text-center text-light">
+            O que fazemos?
+            <span class="underline"></span>
+          </h2>
+        </header>
+
+        <div class="col-md-6 py-4">
+          <img src="img/escolanuvem.png" class="img-fluid d-block mx-auto" />
+          <p class="text-center text-light mt-2">Escola da Nuvem - Promotora</p>
+          <p class="text-center text-light mt-2">A Escola da Nuvem é uma organização da sociedade civil, sem fins lucrativos, que prepara estudantes para carreiras na nuvem e os conecta a empregadores em potencial.
+            Além da formação, por meio de cursos gratuitos e interações com  profissionais experientes em Cloud Computing, a iniciativa traz a força de empresas de tecnologia dispostas a garantir a empregabilidade de seus alunos..</p>
+        </div>
+        <div class="col-md-6 py-4">
+          <img src="img/digi1.png" class="img-fluid d-block mx-auto" />
+          <p class="text-center text-light mt-2">Digicad - Curso Front-End</p>
+          <p class="text-center text-light mt-2">A Digicad é uma escola que reúne os cursos profissionalizantes no ABC de tecnologia e gestão mais exigidos pelo mercado de trabalho.
+
+            O corpo docente é formado por professores altamente capacitados e atuantes em suas áreas de especialização. A infraestrutura foi totalmente projetada para atender a todos os alunos com conforto e comodidade, em um ambiente propício para aprendizagem e troca de conhecimento..</p>
+        </div>
+ <div class="col-md-6 py-4">
+          <img src="img/painelCeu.png" class="img-fluid d-block mx-auto" />
+          <p class="text-center text-light mt-2">Danilo Bezerra - Professor e Mentor</p>
+          <p class="text-center text-light mt-2">Professor de Tecnologia da Informação, Web Design, e áreas relacionadas, em SENAI, SENAC. Com mais de 11 anos de experiência no mercado, tenho dedicado minha carreira ao ensino e à capacitação de alunos em diversas disciplinas de TI, além de ministrar aulas particulares de ferramentas como CorelDRAW e Photoshop.</p>
+        </div>
+ <div class="col-md-6 py-4">
+  <br> 
+        
+          <div class="col-md-6 py-4">
+          <img src="img/leandro.jpg" class="img-fluid d-block mx-auto" />
+          <p class="text-center text-light mt-2">Leandro Vidal - Front-End</p>
+          <p class="text-center text-light mt-2"> Desenvolvimento do modelo certo para a necessidade certa em tecnologias como HTML, CSS, JavaScript, usamos o melhor e mais eficiente serviço envolvendo o que há de mais avançado no mundo de inteligência artificial.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!--Fim Serviços-->
+  
+        
+
+  <!--Fim  Parceiros-->
+  <!--Inicio Seção 1Paralax-->
+  <div id="somos" class="container-fluid bg-parallax">
+    <div class="py-4">
+      <section class="container">
+        <header class="col-md-12">
+          <h2 class="text-center text-light">
+            Quem somos?
+            <span class="underline"></span>
+          </h2>
+          <p class="text-center text-light">
+            Nós trabalhamos para garantir a sustentabilidade junto a elaboração dos planos de crescimento de sua
+            empresa. Soluções Sustentáveis, uma empresa genuinamente brasileira, nasceu com a ideia de trazer
+            competitividade ao mercado de Cloud no Brasil, buscando sempre alinhar os melhores serviço e
+            um serviço de excelência para entregar o nosso melhor.
+
+
+          </p>
+          <p class="text-center text-light">
+            Somos uma empresa pequena, referência em investimentos em serviços AWS nas Américas. Estamos nos tornando a maior
+            empresa brasileira de consultoria a partir de serviços AWS e hoje ajudamos mais de 3
+            milhões e 800 mil clientes satisfeitos.
+
+            Nossa missão é empoderar empresas e pessoas por meio dos recursos da AWS, barata e simples, garantindo redução
+            de custos e contribuindo para uma economia significativa. Não descansaremos até que o sistema de armazenamento em nuvens
+            seja uma realidade para todos.
+
+          </p>
+
+        </header>
+        <div class="row py-2">
+          <div class="col-sm-6 ccol-md-3 col-lg-3">
+            <div class="fatos">
+              <div class="icon">
+                <i class="fa fa-clock"></i>
+              </div>
+              <div class="fatos-contador">
+                <h3>+<span class="contar">43678</span></h3>
+                <h4>Usuários conectados</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 ccol-md-3 col-lg-3">
+            <div class="fatos">
+              <div class="icon">
+                <i class="fa fa-book"></i>
+              </div>
+              <div class="fatos-contador">
+                <h3><span class="contar">160</span></h3>
+                <h4>Suporte mensais</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 ccol-md-3 col-lg-3">
+            <div class="fatos">
+              <div class="icon">
+                <i class="fa fa-users"></i>
+              </div>
+              <div class="fatos-contador">
+                <h3>+<span class="contar">2897</span></h3>
+                <h4>Empresas atendidas</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 ccol-md-3 col-lg-3">
+            <div class="fatos">
+              <div class="icon">
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="fatos-contador">
+                <h3><span class="contar">4.8</span></h3>
+                <h4>Avaliação dos clientes</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--Fim Seção 1Paralax-->
+  <!--Inicio Produtos especificos-->
+  <div class="container-fluid">
+    <div class="my-2 py4">
+      <section class="container">
+        <header class="col-md-12">
+          <h2 class="text-center">
+            Assinatura em promoção
+            <span class="underline"></span>
+          </h2>
+        </header>
+        <!--Colunamento da seção-->
+        <div class="row">
+          <div class="col-sm-6 col-md-3 col-xs-12">
+            <div class="tabela-preco sombra">
+              <div class="preco-detalhe">
+                <h2>Suporte APM </h2>
+                <strike>R$8.854,23</strike>
+                <span>R$5.200,00</span>
+                <ul>
+                  <li>Monitoração você economiza até 40%</li>
+                  <li>Processo de apontamento</li>
+                  <li>Suporte chat 24h</li>
+                  <li>Mensalidade</li>
+                </ul>
+              </div>
+              <div class="preco-botao">
+                <a href="formulario.html" class="btn btn-preco">Assinar</a>
+              </div>
+              <small>* Garantia de Satisfação de 90 dias</small>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-xs-12">
+            <div class="tabela-preco sombra">
+              <div class="preco-detalhe">
+                <h2>Suporte Machine Learning</h2>
+                <strike>R$18.854,23</strike>
+                <span>R$8.500,00</span>
+                <ul>
+                  <li>Planejamento você economiza até 45%</li>
+                  <li>Três proposta de projeto</li>
+                  <li>Suporte Chat 24h</li>
+                  <li>Manutenção</li>
+                </ul>
+              </div>
+              <div class="preco-botao">
+                <a href="formulario.html" class="btn btn-preco">Assinar</a>
+              </div>
+              <small>* Garantia de Satisfação de 90 dias</small>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-xs-12">
+            <div class="tabela-preco sombra">
+              <div class="preco-detalhe">
+                <h2>Suporte Cloud</h2>
+                <strike>R$5.854,23</strike>
+                <span>R$3.200,00</span>
+                <ul>
+                  <li>Economia de até 54%</li>
+                  <li>Suporte Chat 24h</li>
+                  <li>Suporte</li>
+                  <li>Manutenção cada 2 meses</li>
+                </ul>
+              </div>
+              <div class="preco-botao">
+                <a href="formulario.html" class="btn btn-preco">Assinar</a>
+              </div>
+              <small>* Garantia de Satisfação de 90 dias</small>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-xs-12">
+            <div class="tabela-preco sombra">
+              <div class="preco-detalhe">
+                <h2>Implementação Cloud</h2>
+                <strike>R$40.900,23</strike>
+                <span>R$9.900,00</span>
+                <ul>
+                  <li>Promoção de julho você economiza até 76%</li>
+                  <li>Instalação de equipamentos</li>
+                  <li>Gerenciamento sistema integrado</li>
+                  <li>Suporte especializado</li>
+                </ul>
+              </div>
+              <div class="preco-botao">
+                <a href="formulario.html" class="btn btn-preco">Assinar</a>
+              </div>
+              <small>* Garantia de Satisfação de 90 dias</small>
+            </div>
+          </div>
+
+
+        </div><!--Fecha a div row que coloca os itens em uma mesma linha-->
+      </section>
+    </div>
+  </div>
+  <!--Fim Produtos especificos-->
+  <!--Rodapé-->
+  <footer class="container-fluid bg-rodape1">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="text-light align-middle mais-info"><i class="fas fa-info-circle fa-2x mr-2 text-light">Informações úteis</i>
+          </h5>
+        <ul class="text-light">
+          <li><a href="https://www.linkedin.com/company/escola-da-nuvem/" class="text-light" target="_blank"><i
+                class="fa fa-angle-right"></i></i>Trabalhe conosco</a></li>
+          <li><a href="#" class="text-light"><i class="fa fa-angle-right"></i>Telefones úteis</a></li>
+          <li><a href="#" class="text-light"><i class="fa fa-angle-right"></i>Administrativo</a></li><br />
+          <li><a href="#" class="text-light tituloSuporte">
+              <h4 style="margin-left: 18px;">Suporte técnico</h4>
+            </a></li>
+
+          <div style="display: inline-block; margin-right: 10px; ">
+            <button onclick="openForm()"
+              style="padding:5px; background-color: #FE8F4C; border-radius: 5px; box-shadow: 2px 2px 2px rgba(0,0,0,0.3);">
+              Atendimento
+            </button>
+
+          </div>
+
+
+        </ul>
+      </div>
+      <!--Div oculta form btn suporte-->
+      <div class="form-popup" id="myForm">
+
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="post"
+          class="form-container">
+          <h2>Solicitar suporte via e-mail</h2>
+
+          <input type=hidden name="orgid" value="00DDo000001DPsW">
+          <input type=hidden name="retURL" value="https://energiza.netlify.app/agradecimento2.html">
+
+          <label for="name"><b>Nome</b></label>
+          <input id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+          <label for="email"><b>E-mail</b></label>
+          <input id="email" maxlength="80" name="email" size="20" type="text" type="text" name="email" required />
+
+          <label for="company"><b>Empresa</b></label>
+          <input id="company" maxlength="80" name="company" size="20" type="text" /><br>
+
+          <label for="phone"><b>Telefone</b></label>
+          <input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+          <label for="subject"><b>Assunto</b></label>
+          <input id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+
+
+          <input type="hidden" name="to" value="energizaatendimentoSolar@gmail.com">
+
+          <button type="submit" name="submit" class="btn">Enviar</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+        </form>
+
+        <!--Fim da Div oculta form btn suporte-->
+        <!--<form action="enviar-email.php" method="post" class="form-container">
+
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <label for="company">Empresa:</label>
+          <input type="text" id="com" name="com" required>
+          <br>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" required placeholder="Digite sua mensagem"></textarea>
+          <br>
+          <button type="submit" class="btn">Enviar</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+        </form>-->
+      </div>
+
+
+
+
+      <div class="col-md-4">
+        <div class="col-md-6">
+          <h6 class="text-light mais-empresa">Mais sobre a empresa<span class="underline-footer" </h6>
+              <ul class="text-light">
+                <li><a href="#somos" class="text-light">Quem Somos</a></li>
+                <li><a href="#parceiros" class="text-light">Parceiros</a></li>
+                <li><a href="#servicos" class="text-light">Portifolio</a></li>
+                <li><a href="formulario.html" class="text-light">Currículo</a></li>
+
+              </ul>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-light mb3 bg-card-rodape">
+          <div class="card-body">
+            <h4 class="card-title"><i class="far fa-building mr2 fa-2x icon-banner-rodape"></i>
+              Traga sua empresa</h4>
+            <p class="card-text text-justify">Peça um orçamento sem compromisso e veja como podemos ajudar na economia
+              de serviços AWS</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <div class="container-fluid bg-rodape2">
+    <div class="continer py-4">
+      <img src="img/logoRodape.png" class="img-fluid mx-auto d-block">
+      <div class="text-center pt-1">
+        <a href="#" class="icon-social" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
+        <a href="#" class="icon-social" target="_blank"><i class="fab fa-youtube-square fa-lg"></i></a>
+        <a href="#" class="icon-social" target="_blank"><i class="fab fa-instagram-square fa-lg"></i></a>
+        <a href="#" class="icon-social" target="_blank"><i class="fab fa-twitter-square fa-lg"></i></a>
+        <a href="#" class="icon-social" target="_blank"><i class="fab fa-linkedin-square fa-lg"></i></a>
+      </div></img>
+    </div>
+
+  </div>
+  <!--Fim do Rodapé-->
+
+  <!--JS Bootstrap-->
+  <script type="text/javascript" src="js/jquery-min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+  <script type="text/javascript" src="js/waypoints.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
